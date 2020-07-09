@@ -41,7 +41,6 @@ class s3dpak():
             file_stream.seek(starting_pos)
             return
 
-        #im being lazy, fix this later
         def extract(self, location):
             with open(location + "/" + self.string, "wb") as file:
                 file.write(self.data)
